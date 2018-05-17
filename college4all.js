@@ -1,4 +1,4 @@
-function showAbout(){
-    document.getElementById("about").style.display = "inline-block";
-}
+$("#about").on("click",function(){
+    $("")
+});
 
