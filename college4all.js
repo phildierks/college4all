@@ -9,5 +9,7 @@ function showstats(){
     $("#about").hide();
 }
 function showres(){
-
+    $("#intro").hide();
+    $("#about").show();
+    $("#stats").hide();
 }
