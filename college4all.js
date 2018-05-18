@@ -8,3 +8,6 @@ function showstats(){
     $("#stats").show();
     $("#about").hide();
 }
+function showres(){
+
+}
