@@ -9,85 +9,89 @@
     <title>COLLEGE 4 ALL</title>
 </head>
 
-<body><h1 style="text-align: center;font-size: 70px;"><img style="height: 20%;width:20%" class="z-depth-3" src="img/logo.png"></h1>
-<i><h1 id="intro" style="text-align: center; font-size: 25px">Your Educational Support Platform</h1></i>
-<div style="text-align: center;">
-    <button onclick="showhome()" class="waves-effect waves-light btn-large">Home</button>
-    <button onclick="showstats()" class="waves-effect waves-light btn-large">Statistics</button>
-    <button class="waves-effect waves-light btn-large" onclick="" >Resources</button>
-    <button id="aboutbtn" onclick="showabt()" class="waves-effect waves-light btn-large">About Us</button>
-</div>
-<br>
-<div id="res" onclick="showres()" style="display: none">
-    <a href="https://www.khanacademy.org/test-prep/sat">Khan Academy</a>
+<tr><h1 style="text-align: center;font-size: 70px;"><img style="height: 20%;width:20%" class="z-depth-3" src="img/logo.png"></h1>
+    <i><h1 style="text-align: center; font-size: 25px">Your Educational Support Platform</h1></i>
+    <div style="text-align: center;">
+        <button onclick="showhome()" class="waves-effect waves-light btn-large">Home</button>
+        <button onclick="showstats()" class="waves-effect waves-light btn-large">Statistics</button>
+        <button class="waves-effect waves-light btn-large" onclick="showres()" >Resources</button>
+        <button id="aboutbtn" onclick="showabt()" class="waves-effect waves-light btn-large">About Us</button>
+    </div>
     <br>
+    <div id="res" onclick="showres()" style="display: none;text-align: center">
+        <a href="https://www.khanacademy.org/test-prep/sat">Khan Academy</a>
+        <br>
         <a href="https://ptps.berkeley.edu/enroll.html">Enroll in a Class</a>
-<br>
-<a href="https://www.methodtestprep.com/free-sat-act-prep-class"> Method Test Prep</a>
-<br>
+        <br>
+        <a href="https://www.methodtestprep.com/free-sat-act-prep-class"> Method Test Prep</a>
+        <br>
         <a href="https://blog.prepscholar.com/printable-sat-practice-tests-4-free-official-tests"> Practice Tests</a>
 
-</div>
-<br>
-<div id="about" style="text-align: center;display:none">
-    We are a group of three Berkeley High students who feel that not everyone is given equal opportunities to show their strengths
-    to colleges of their choice. We have firsthand experience in field of standardized tests and feel that it is important for
-    everyone to have equal chances in the admission process.
-
-    <div id="phil">
-    <img width="15%" height="15%" class="z-depth-3" src="img/phil.jpg">
+    </div>
     <br>
-    My name is Philip Dierks and I am a junior at Berkeley High. I am a member of Berkeley High's Link Crew, a tutor and, and a varsity soccer player.
-    I also am experienced in the process of standardized testing. Therefore, I think I am a valid member of this group. Everyone deserves to
-    have an equal chance to go to college.
 
-    </div>
+
+    <div id="about" style="text-align: center;display:none">
+        We are a group of three Berkeley High students who feel that not everyone is given equal opportunities to show their strengths
+        to colleges of their choice. We have firsthand experience in field of standardized tests and feel that it is important for
+        everyone to have equal chances in the admission process.
+        <table>
+            <tr><td><div id="phil">
+                <img width="50%" height="50%" class="z-depth-3" src="img/phil.jpg">
+                <td>My name is Philip Dierks and I am a junior at Berkeley High. I am a member of Berkeley High's Link Crew, a tutor and, and a varsity soccer player.
+                    I also am experienced in the process of standardized testing. Therefore, I believe I am a valid contributor to the solution to the problem. Everyone deserves to
+                    have an equal chance to go to college.
+                </td></div>
+</tr>
 <br>
 
-    <div id="andrew">
-    I am Andrew Simpson and junior at Berkeley High School. I am a rower, and am hoping to row in college.
-    Among the many obstacles in the college admissions process, standardized testing is the most daunting.
-    That is why I would like to make the process more simple for students like myself.
-
-    </div>
+<tr><td><div id="andrew">
+    <img width="50%" height="50%" class="z-depth-3" src="img/andrew.jpg">
+    <td>I am Andrew Simpson and junior at Berkeley High School. I am a rower, and am hoping to row in college.
+        Among the many obstacles in the college admissions process, standardized testing is the most daunting.
+        That is why I would like to make the process more simple for students like myself.
+    </td></div>
+</tr>
 <br>
-
-    <div id="jacques">
-    My name is Jacques Otis Xavier Ackerberg Lybarger-Martel. I'm the product of a social experiment,a junior at Berkeley High School,
-    a varsity debater, an ex-soccer player, a current rugby player, and a veteran test taker. I'm lucky enough to have
-    parents that can afford to buy me Barron's books and even SAT tutors, but I grew up with
-    many kids who are not so fortunate. I am passionate about closing the achievement gap because it is not fair that I
-    will probably do better than them on standardized tests just because I did better in the birth lottery.
-
-    </div>
+<tr><td><div id="jacques">
+    <img width="50%" height="50%" class="z-depth-3" src="img/jacques.jpg">
+    <td>My name is Jacques Otis Xavier Ackerberg Lybarger-Martel. I'm the product of a social experiment, a junior at Berkeley High School,
+        a varsity debater, an ex-soccer player, a current rugby player, and a veteran test taker. I'm lucky enough to have
+        parents that can afford to buy me Barron's books and even SAT tutors, but I grew up with
+        many kids who are not so fortunate. I am passionate about closing the achievement gap because it is not fair that I
+        will probably do better than them on standardized tests just because I did better in the birth lottery.
+    </td></div>
+</tr>
+</table>
 </div>
+
 <div id="stats" style="display: none;">
-<h1 style="text-align: center; font-size: 20px"> Every year, students hailing from poorer economic
-    backgrounds do significantly <br>worse on nationwide tests like the ACT, SAT and AP tests</h1>
-<div style="text-align: center">
-    <div class="col s12 m2">
-        <img width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
-<br>
-        <img width="40%" height="40%" class="z-depth-3" src="img/resource.png">
-<br>
-        <img width="40%" height="40%" class="z-depth-3" src="img/available.png">
+    <h1 style="text-align: center; font-size: 20px"> Every year, students hailing from poorer economic
+        backgrounds do significantly <br>worse on nationwide tests like the ACT, SAT and AP tests</h1>
+    <div style="text-align: center">
+        <div class="col s12 m2">
+            <img width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
+            <br>
+            <img width="40%" height="40%" class="z-depth-3" src="img/resource.png">
+            <br>
+            <img width="40%" height="40%" class="z-depth-3" src="img/available.png">
+        </div>
     </div>
-</div>
 
 </div>
-<div id="homepage">
-    <div id=" Philosphy">
-    <div id="ourphil"> OUR PHILOSOPHY</div>
-    <div id="philtext"> Here at College 4 All, we believe higher education <br>is something that should be equally accessible
-        for all. <br>We have dedicated our selves to closing the gap between the test scores of <br>different income groups.
+<div id="homepage" style="text-align: center">
+    <div id="ourphil" style="font-size: 30px" > OUR PHILOSOPHY</div>
+    <div id="philtext"> Here at College 4 All, we believe higher education is something that <br>should be equally accessible
+        for all. we have dedicated our selves to closing the gap between the test <br>scores of different income groups.
         To learn more about the achievement gap click the STATISTICS button. </div>
-    </div>
-    <div id="mission">
-    <div id="ourmis">OUR MISSION</div>
-    <div id="mistext">We at College 4 All aim to connect students from low socioeconomic backgrounds<br> to helpful resources
-        that they ordinarily wouldn't have access to. <br>We also provide a philanthropic platform where those with means can
-        donate to other programs that can help students from <br>lower income families. To make a donation click the DONATE button.</div>
-    </div>
+    <div id="ourmis" style="font-size: 30px" >OUR MISSION</div>
+    <div id="mistext">We at College 4 All aim to connect students from low socioeconomic<br> backgrounds to helpful resources
+        that they ordinarily wouldn't have access to. We also <br>provide a philanthropic platform where those with means can
+        donate to other programs that <br>can help students from lower income families. To make a donation click the DONATE button.</div>
+    <div id="future" style="font-size: 30px">PLANS FOR THE FUTURE </div>
+    <div id="futuretext"> In the future we hope to develop our own programs that students can access on our website or on our app.<br>
+    We will still continue to direct students to other helpful resources, but we feel some homegrown, tailored study plans is <br>
+    the best way to help students shrink the achievement gap.</div>
 </div>
 
 </body>
