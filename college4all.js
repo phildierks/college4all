@@ -1,13 +1,13 @@
 function showabt(){
     $("#intro").hide();
-    $("#about").show();
+    $("#about").fadeIn(2000);
     $("#stats").hide();
     $("#res").hide();
     $("#homepage").hide();
 }
 function showstats(){
     $("#intro").hide();
-    $("#stats").show();
+    $("#stats").fadeIn(2000);
     $("#about").hide();
     $("#res").hide();
     $("#homepage").hide();
@@ -16,7 +16,7 @@ function showres(){
     $("#intro").hide();
     $("#stats").hide();
     $("#about").hide();
-    $("#res").show();
+    $("#res").fadeIn(2000);
     $("#homepage").hide();
 }
 function showhome(){
@@ -24,5 +24,5 @@ function showhome(){
     $("#about").hide();
     $("#stats").hide();
     $("#res").hide();
-    $("#homepage").show();
+    $("#homepage").fadeIn(2000);
 }
