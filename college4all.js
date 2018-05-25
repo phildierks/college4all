@@ -27,3 +27,11 @@ function showhome(){
     $("#res").hide();
     $("#homepage").show();
 }
+
+function showdonate(){
+    $("#intro").hide();
+    $("#stats").hide();
+    $("#about").hide();
+    $("#res").hide();
+    $("#homepage").hide();
+}
