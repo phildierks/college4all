@@ -4,6 +4,7 @@ function showabt(){
     $("#about").show();
     $("#stats").hide();
     $("#res").hide();
+    $("#donate").hide();
     $("#homepage").hide();
 }
 function showstats(){
@@ -11,6 +12,7 @@ function showstats(){
     $("#stats").show();
     $("#about").hide();
     $("#res").hide();
+    $("#donate").hide();
     $("#homepage").hide();
 }
 function showres(){
@@ -19,6 +21,7 @@ function showres(){
     $("#about").hide();
     $("#res").show();
     $("#homepage").hide();
+    $("#donate").hide();
 }
 function showhome(){
     $("#intro").hide();
@@ -26,6 +29,7 @@ function showhome(){
     $("#stats").hide();
     $("#res").hide();
     $("#homepage").show();
+    $("#donate").hide();
 }
 
 function showdonate(){
@@ -34,4 +38,5 @@ function showdonate(){
     $("#about").hide();
     $("#res").hide();
     $("#homepage").hide();
+    $("#donate").show();
 }
