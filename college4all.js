@@ -39,15 +39,40 @@ function showdonate(){
     $("#homepage").hide();
     $("#donate").fadeIn(1500);
 }
-$("#prepare").on("mouseover",function(){
-    $("#prepare").fadeIn(1500);
-});
+
 function showres2(){
-    $("#resourcepic").fadeIn();
+        if(!$("#graph2").hasClass("show")) {
+
+            $("#graph2").addClass("show");
+            $("#resourcepic").hide();
+
+        }else{
+            $("#graph2").removeClass("show");
+            $("#resourcepic").fadeIn();
+        }
 }
 function showprep (){
-    $("#prep").fadeIn();
+    if(!$("#graph1").hasClass("show")) {
+        $("#graph1").addClass("show");
+        $("#prep").hide();
+
+    }else{
+        $("#graph1").removeClass("show");
+        $("#prep").fadeIn();
+    }
 }
+
+
 function showav (){
-    $("#available").fadeIn();
+    if(!$("#graph3").hasClass("show")) {
+        $("#graph3").addClass("show");
+        $("#available").hide();
+    }else{
+        $("#graph3").removeClass("show");
+        $("#available").fadeIn();
+
+    }
+
 }
+
+
