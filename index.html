@@ -15,8 +15,8 @@
         <button onclick="showhome()" class="waves-effect waves-light btn-large">Home</button>
         <button onclick="showstats()" class="waves-effect waves-light btn-large">Statistics</button>
         <button class="waves-effect waves-light btn-large" onclick="showres()" >Resources</button>
-        <button id="donatebtn" onclick="showdonate()" class="waves-effect waves-light btn-large">Donate</button>
         <button id="aboutbtn" onclick="showabt()" class="waves-effect waves-light btn-large">About Us</button>
+        <button id="donatebtn" onclick="showdonate()" class="waves-effect waves-light btn-large">Donate</button>
     </div>
     <div id="res" onclick="showres()" style="display: none;text-align: center">
         <h1 style="text-align: center;font-size: 40px"> Resources</h1>
@@ -53,6 +53,8 @@
 
     <div id="donate" onclick="showdonate()" style="display: none;text-align: center">
         <h1 style="text-align: center;font-size: 40px">Donate</h1>
+        <div id="plea for help'"> Seeing as we are only 3 high school students, we are very limited in both our resources and<br>
+        abilities. Your donation will enable us to outsource some of our tasks and better our <br>ability to affect change in our community. </div>
         <a href="https://www.gofundme.com/college-4-all?teamInvite=NmmsIhREh2zaEeg6LOJ8S01hnYpIkLWUgyP3qcnAxoWdxha57ucBUVCpF4aJqPvE" target="_blank"> Help us do more </a>
     </div>
 
@@ -101,19 +103,20 @@
         <div class="col s12 m2">
             <div>
 
-                <button id="graph1" onclick="showprep()"  >Show Graph</button>
+                <button id="graph1" class="waves-effect waves-light btn-large" onclick="showprep()" class="show" >Show Graph</button>
                 <br>
             <img id="prep" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
             </div>
             <br>
-            <div >
-            <button onclick="showres2()" id="graph2" >Show Graph</button>
+            <div>
+                <br>
+            <button onclick="showres2()" class="waves-effect waves-light btn-large" class="show" id="graph2" >Show Graph</button>
                 <br>
             <img id="resourcepic" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/resource.png">
             </div>
             <br>
             <div>
-                <button id="graph3" onclick="showav()"  >Show Graph</button>
+                <button id="graph3" class="waves-effect waves-light btn-large" class="show" onclick="showav()"  >Show Graph</button>
                 <br>
             <img id="available" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/available.png">
             </div>

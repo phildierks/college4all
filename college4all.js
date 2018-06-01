@@ -39,40 +39,38 @@ function showdonate(){
     $("#homepage").hide();
     $("#donate").fadeIn(1500);
 }
-
-function showres2(){
-        if(!$("#graph2").hasClass("show")) {
-
-            $("#graph2").addClass("show");
-            $("#resourcepic").hide();
-
-        }else{
-            $("#graph2").removeClass("show");
-            $("#resourcepic").fadeIn();
-        }
-}
 function showprep (){
-    if(!$("#graph1").hasClass("show")) {
-        $("#graph1").addClass("show");
-        $("#prep").hide();
-
-    }else{
-        $("#graph1").removeClass("show");
+    if($("#graph1").hasClass("show")) {
         $("#prep").fadeIn();
+        $("#graph1").removeClass("show");
+        $("#graph1").html("Hide Graph");
+    }else{
+        $("#graph1").addClass("show");
+        $("#graph1").html("Show Graph");
+        $("#prep").hide();
     }
 }
-
-
-function showav (){
-    if(!$("#graph3").hasClass("show")) {
-        $("#graph3").addClass("show");
-        $("#available").hide();
+function showres2 (){
+    if($("#graph2").hasClass("show")) {
+        $("#resourcepic").fadeIn();
+        $("#graph2").removeClass("show");
+        $("#graph2").html("Hide Graph");
     }else{
-        $("#graph3").removeClass("show");
-        $("#available").fadeIn();
-
+        $("#graph2").addClass("show");
+        $("#graph2").html("Show Graph");
+        $("#resourcepic").hide();
     }
-
+}
+function showav (){
+    if($("#graph3").hasClass("show")) {
+        $("#available").fadeIn();
+        $("#graph3").removeClass("show");
+        $("#graph3").html("Hide Graph");
+    }else{
+        $("#graph3").addClass("show");
+        $("#graph3").html("Show Graph");
+        $("#available").hide();
+    }
 }
 
 
