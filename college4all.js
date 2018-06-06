@@ -95,14 +95,16 @@ $.ajax({
     dataType: 'html',
     success: function (result) {
         console.log(result);
-        //myFunction(result);
+        myFunction(result);
     },
     error: function () {
         alert('Failed');
     }
 });
-var dom = document.createElement("div");
-dom.innerHTML = "";
-var DOM = dom.firstChild;
+function myFunction(result){
+    var html = new DOMParser().parseFromString(result, "text/html");
+    console.log(html);
+}
+
 
 
