@@ -1,3 +1,4 @@
+var num=0;
 function showabt(){
     $("#intro").hide();
     $("#about").fadeIn(2000);
@@ -87,20 +88,51 @@ function showav (){
         $("#available").hide();
     }
 }
-$.ajax({
-
-    url: "https://collegereadiness.collegeboard.org/sample-questions/writing/8",
-    type: 'GET',
-    crossDomain: true,
-    dataType: 'html',
-    success: function (result) {
-        console.log(result);
-        myFunction(result);
-    },
-    error: function () {
-        alert('Failed');
+function showphil(){
+    if($("#philbut").hasClass("show")) {
+        $("#philip").fadeIn();
+        $("#philbut").removeClass("show");
+        $("#philbut").remove();
+    }else{
+        $("#philbut").addClass("show");
+        $("#phil").hide();
+}
+}
+function showjacques (){
+    if($("#jacquesbut").hasClass("show")) {
+        $("#jacques").fadeIn();
+        $("#jacquesbut").removeClass("show");
+        $("#jacquesbut").remove();
+    }else{
+        $("#jacquesbut").addClass("show");
+        $("#jacques").hide();
     }
-});
+}
+function showand (){
+    if($("#andrewbut").hasClass("show")) {
+        $("#andrew").fadeIn();
+        $("#andrewbut").removeClass("show");
+        $("#andrewbut").remove();
+    }else{
+        $("#andrewbut").addClass("show");
+        $("#andrew").hide();
+    }
+}
+function getResult(){
+    num = (Math.floor(Math.random() * Math.floor(30)));
+    $.ajax({
+        url: "https://collegereadiness.collegeboard.org/sample-questions/math/calculator-permitted/" + num,
+        type: 'GET',
+        crossDomain: true,
+        dataType: 'html',
+        success: function (result) {
+            myFunction(result);
+        },
+        error: function () {
+            alert('Failed');
+        }
+    });
+}
 function myFunction(result){
     var html = new DOMParser().parseFromString(result, "text/html");
     console.log(html);
