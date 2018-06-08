@@ -9,7 +9,7 @@
     <title>COLLEGE 4 ALL</title>
 </head>
 <body>
-<button onclick="getResult()"> Get Result</button>
+
 <tr><h1 style="text-align: center;font-size: 70px;"><img style="height: 20%;width:20%" class="z-depth-3" src="img/logo.png"></h1>
     <i><h1 style="text-align: center; font-size: 25px">Your Educational Support Platform</h1></i>
     <div style="text-align: center;">
@@ -105,38 +105,48 @@
         in our area, <br> Richmond High. 75 students were surveyed. </h1>
     <div style="text-align: center">
         <div class="col s12 m2">
-            <div>g id="resourcepic" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/resource.png">
-            </div>
+            <button style="text-align: center" id="graph1" class="waves-effect waves-light btn-large" class="show" onclick="showprep()">Show Graph</button>
             <br>
-            <div>
-                <button id="graph3" class="waves-effect waves-light btn-large" class="show" onclick="showav()"  >Show Graph</button>
-                <br>
+            <img id="prep" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
+<br>
+        </div>
+        <div class="col s12 m2">
+                <button style="text-align: center" id="graph2" class="waves-effect waves-light btn-large" class="show" onclick="showres2()">Show Graph</button>
+            <br>
+                <img id="resourcepic" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/resource.png">
+<br>
+        </div>
+        <div class="col s12 m2">
+            <button style="text-align: center" id="graph3" class="waves-effect waves-light btn-large" class="show" onclick="showav()"  >Show Graph</button>
+            <br>
             <img id="available" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/available.png">
-            </div>
         </div>
     </div>
-
 </div>
+
+
 <br>
 <br>
 <div id="homepage" style="text-align: center">
-    <div id="ourphil" style="font-size: 30px" > OUR PHILOSOPHY</div>
+    <div id="ourphil" style="font-size: 30px;text-align: center" > OUR PHILOSOPHY</div>
     <div id="philtext"> Here at College 4 All, we believe higher education is something that <br>should be equally accessible
         for all. we have dedicated our selves to closing the gap between the test <br>scores of different income groups.
         To learn more about the achievement gap click the STATISTICS button. </div>
-    <div id="ourmis" style="font-size: 30px" >OUR MISSION</div>
+    <div id="ourmis" style="font-size: 30px;text-align: center" >OUR MISSION</div>
     <div id="mistext">We at College 4 All aim to connect students from low socioeconomic<br> backgrounds to helpful resources
         that they ordinarily wouldn't have access to. We also <br>provide a philanthropic platform where those with means can
         donate to other programs that <br>can help students from lower income families. To make a donation click the DONATE button.</div>
-    <div id="future" style="font-size: 30px">PLANS FOR THE FUTURE </div>
+    <div id="future" style="font-size: 30px;text-align: center">PLANS FOR THE FUTURE </div>
     <div id="futuretext"> In the future we hope to develop our own programs that students can access on our website or on our app.<br>
     We will still continue to direct students to other helpful resources, but we feel some homegrown, tailored study plans is <br>
     the best way to help students shrink the achievement gap.</div>
-</div>
-<div id="tests" style="text-align: center">
-    <h1 style="font-size:30px">SAMPLE TEST QUESTIONS</h1>
 
 </div>
-<iframe id="collegeB" ></iframe>
+<div id="tests" style="text-align: center;display: none">
+    <h1 style="font-size:30px">SAMPLE TEST QUESTIONS</h1>
+    <button class="waves-effect blue btn-flat" onclick="getQuestion()">Try a Question</button>
+    <div id="collegeB"></div>
+
+</div>
 </body>
 </html>
