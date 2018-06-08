@@ -4,6 +4,7 @@ function showabt(){
     $("#stats").hide();
     $("#donate").hide();
     $("#res").hide();
+    $("#tests").hide();
     $("#homepage").hide();
 }
 function showstats(){
@@ -12,6 +13,7 @@ function showstats(){
     $("#about").hide();
     $("#donate").hide();
     $("#res").hide();
+    $("#tests").hide();
     $("#homepage").hide();
 }
 function showres(){
@@ -19,6 +21,7 @@ function showres(){
     $("#stats").hide();
     $("#about").hide();
     $("#donate").hide();
+    $("#tests").hide();
     $("#res").fadeIn(2000);
     $("#homepage").hide();
 }
@@ -28,6 +31,7 @@ function showhome(){
     $("#stats").hide();
     $("#res").hide();
     $("#donate").hide();
+    $("#tests").hide();
     $("#homepage").fadeIn(2000);
 }
 
@@ -37,7 +41,18 @@ function showdonate(){
     $("#stats").hide();
     $("#res").hide();
     $("#homepage").hide();
+    $("#tests").hide();
     $("#donate").fadeIn(1500);
+}
+
+function showtest(){
+    $("#intro").hide();
+    $("#about").hide();
+    $("#stats").hide();
+    $("#res").hide();
+    $("#homepage").hide();
+    $("#donate").hide();
+    $("#tests").fadeIn(1500);
 }
 function showprep (){
     if($("#graph1").hasClass("show")) {
@@ -72,33 +87,24 @@ function showav (){
         $("#available").hide();
     }
 }
-function showphil (){
-    if($("#philbut").hasClass("show")) {
-        $("#philip").fadeIn();
-        $("#philbut").removeClass("show");
-        $("#philbut").remove();
-    }else{
-        $("#philbut").addClass("show");
-        $("#phil").hide();
+$.ajax({
+
+    url: "https://collegereadiness.collegeboard.org/sample-questions/writing/8",
+    type: 'GET',
+    crossDomain: true,
+    dataType: 'html',
+    success: function (result) {
+        console.log(result);
+        myFunction(result);
+    },
+    error: function () {
+        alert('Failed');
     }
+});
+function myFunction(result){
+    var html = new DOMParser().parseFromString(result, "text/html");
+    console.log(html);
 }
-function showjacques (){
-    if($("#jacquesbut").hasClass("show")) {
-        $("#jacques").fadeIn();
-        $("#jacquesbut").removeClass("show");
-        $("#jacquesbut").remove();
-    }else{
-        $("#jacquesbut").addClass("show");
-        $("#jacques").hide();
-    }
-}
-function showand (){
-    if($("#andrewbut").hasClass("show")) {
-        $("#andrew").fadeIn();
-        $("#andrewbut").removeClass("show");
-        $("#andrewbut").remove();
-    }else{
-        $("#andrewbut").addClass("show");
-        $("#andrew").hide();
-    }
-}
+
+
+

@@ -8,21 +8,23 @@
     <meta charset="UTF-8">
     <title>COLLEGE 4 ALL</title>
 </head>
-
+<body>
 <tr><h1 style="text-align: center;font-size: 70px;"><img style="height: 20%;width:20%" class="z-depth-3" src="img/logo.png"></h1>
     <i><h1 style="text-align: center; font-size: 25px">Your Educational Support Platform</h1></i>
     <div style="text-align: center;">
         <button onclick="showhome()" class="waves-effect waves-light btn-large">Home</button>
         <button onclick="showstats()" class="waves-effect waves-light btn-large">Statistics</button>
         <button class="waves-effect waves-light btn-large" onclick="showres()" >Resources</button>
+        <button id="testbtn" onclick="showtest()" class="waves-effect waves-light btn-large">SAMPLE TEST QUESTIONS</button>
         <button id="aboutbtn" onclick="showabt()" class="waves-effect waves-light btn-large">About Us</button>
+
         <button id="donatebtn" onclick="showdonate()" class="waves-effect waves-light btn-large">Donate</button>
     </div>
     <div id="res" onclick="showres()" style="display: none;text-align: center">
         <h1 style="text-align: center;font-size: 40px"> Resources</h1>
         <div id="khandescription"> Khan Academy is a fantastic resource that provides a free curriculum that teaches <br>
             students the basics of many different subjects, including math, most sciences, and computer science. <br> They
-            also offer a simple SAT study program with full length tests, selected practice questions, and helpful test taking
+        also offer a simple SAT study program with full length tests, selected practice questions, and helpful test taking
             strategies</div>
         <a href="https://www.khanacademy.org/test-prep/sat" target="_blank">Khan Academy</a>
         <br>
@@ -35,12 +37,12 @@
         <br>
         <br>
         <div id="methodtestprepdescription"> This resource is essentially the equivalent of hiring a top notch tutor for an hour and
-            a half. <br>For 90 minutes, users get nonstop, useful information about how to do well on the SAT. </div>
+        a half. <br>For 90 minutes, users get nonstop, useful information about how to do well on the SAT. </div>
         <a href="https://www.methodtestprep.com/free-sat-act-prep-class" target="_blank"> Method Test Prep</a>
         <br>
         <br>
         <div id="practicetestdescription"> Of course, practice is the best form of preparation for any test. <br>Here we've
-            provided links to several full-length practice tests for both the SAT and the ACT</div>
+        provided links to several full-length practice tests for both the SAT and the ACT</div>
         <a href="https://blog.prepscholar.com/printable-sat-practice-tests-4-free-official-tests" target="_blank"> Practice SAT Tests </a>||
         <a href="https://www.powerscore.com/sat/help/content_practice_tests.cfm#official-act" target="_blank">Practice ACT Tests</a>
         <br>
@@ -54,7 +56,7 @@
     <div id="donate" onclick="showdonate()" style="display: none;text-align: center">
         <h1 style="text-align: center;font-size: 40px">Donate</h1>
         <div id="plea for help'"> Seeing as we are only 3 high school students, we are very limited in both our resources and<br>
-            abilities. Your donation will enable us to outsource some of our tasks and better our <br>ability to affect change in our community. </div>
+        abilities. Your donation will enable us to outsource some of our tasks and better our <br>ability to affect change in our community. </div>
         <a href="https://www.gofundme.com/college-4-all?teamInvite=NmmsIhREh2zaEeg6LOJ8S01hnYpIkLWUgyP3qcnAxoWdxha57ucBUVCpF4aJqPvE" target="_blank"> Help us do more </a>
     </div>
 
@@ -64,31 +66,30 @@
         to colleges of their choice. We have firsthand experience in field of standardized tests and feel that it is important for
         everyone to have equal chances in the admission process.
         <table>
-            <tr><td>
-                <img width="30%" height="40%" class="z-depth-3" src="img/phil.jpg">
-                <td>
-                <button id="philbut" onclick="showphil()" class="waves-effect waves-light btn-large"> Learn More About Philip</button><div id="philip" style="display:none">My name is Philip Dierks and I am a junior at Berkeley High. I am a member of Berkeley High's Link Crew, a tutor and, and a varsity soccer player.
+            <tr><td><div id="phil">
+                <img width="50%" height="50%" class="z-depth-3" src="img/phil.jpg">
+                <td>My name is Philip Dierks and I am a junior at Berkeley High. I am a member of Berkeley High's Link Crew, a tutor and, and a varsity soccer player.
                     I also am experienced in the process of standardized testing. Therefore, I believe I am a valid contributor to the solution to the problem. Everyone deserves to
-                have an equal chance to go to college.</div>
+                    have an equal chance to go to college.
                 </td> </div>
 </tr>
 <br>
 
-<tr><td><div>
-    <img width="30%" height="50%" class="z-depth-3" src="img/andrew.jpg">
-    <td> <button id="andrewbut" onclick="showand()" class="waves-effect waves-light btn-large"> Learn More About Andrew</button> <div id="andrew" style="display:none">I am Andrew Simpson and junior at Berkeley High School. I am a rower, and am hoping to row in college.
+<tr><td><div id="andrew">
+    <img width="50%" height="50%" class="z-depth-3" src="img/andrew.jpg">
+    <td>I am Andrew Simpson and junior at Berkeley High School. I am a rower, and am hoping to row in college.
         Among the many obstacles in the college admissions process, standardized testing is the most daunting.
-    That is why I would like to make the process more simple for students like myself.</div>
+        That is why I would like to make the process more simple for students like myself.
     </td></div>
 </tr>
 <br>
-<tr><td><div>
-    <img width="30%" height="50%" class="z-depth-3" src="img/jacques.jpg">
-    <td> <button id="jacquesbut" onclick="showjacques()" class="waves-effect waves-light btn-large"> Learn More About Jacques</button> <div id="jacques" style="display:none">My name is Jacques Otis Xavier Ackerberg Lybarger-Martel. I'm the product of a social experiment, a junior at Berkeley High School,
+<tr><td><div id="jacques">
+    <img width="50%" height="50%" class="z-depth-3" src="img/jacques.jpg">
+    <td>My name is Jacques Otis Xavier Ackerberg Lybarger-Martel. I'm the product of a social experiment, a junior at Berkeley High School,
         a varsity debater, an ex-soccer player, a current rugby player, and a veteran test taker. I'm lucky enough to have
         parents that can afford to buy me Barron's books and even SAT tutors, but I grew up with
         many kids who are not so fortunate. I am passionate about closing the achievement gap because it is not fair that I
-    will probably do better than them on standardized tests just because I did better in the birth lottery.</div>
+        will probably do better than them on standardized tests just because I did better in the birth lottery.
     </td></div>
 </tr>
 </table>
@@ -96,32 +97,33 @@
 
 <div id="stats" style="display: none;">
     <h1 style="text-align: center;font-size: 40px">Statistics<h1>
-        <h1 style="text-align: center; font-size: 20px"> Every year, students hailing from poorer economic
-            backgrounds do significantly <br>worse on nationwide tests like the ACT, SAT and AP tests</h1>
-        <h1 style="text-align: center; font-size: 20px"> These pie charts represent surveys we took at the poorest high school
-            in our area, <br> Richmond High. 75 students were surveyed. </h1>
-        <div style="text-align: center">
-            <div class="col s12 m2">
-                <div>
+    <h1 style="text-align: center; font-size: 20px"> Every year, students hailing from poorer economic
+        backgrounds do significantly <br>worse on nationwide tests like the ACT, SAT and AP tests</h1>
+    <h1 style="text-align: center; font-size: 20px"> These pie charts represent surveys we took at the poorest high school
+        in our area, <br> Richmond High. 75 students were surveyed. </h1>
+    <div style="text-align: center">
+        <div class="col s12 m2">
+            <div>
 
-                    <button id="graph1" class="waves-effect waves-light btn-large" onclick="showprep()" class="show" >Show Graph</button>
-                    <br>
-                    <img id="prep" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
-                </div>
+                <button id="graph1" class="waves-effect waves-light btn-large" onclick="showprep()" class="show" >Show Graph</button>
                 <br>
-                <div>
-                    <button onclick="showres2()" class="waves-effect waves-light btn-large" class="show" id="graph2" >Show Graph</button>
-                    <br>
-                    <img id="resourcepic" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/resource.png">
-                </div>
+            <img id="prep" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/prepare.png">
+            </div>
+            <br>
+            <div>
+            <button onclick="showres2()" class="waves-effect waves-light btn-large" class="show" id="graph2" >Show Graph</button>
                 <br>
-                <div>
-                    <button id="graph3" class="waves-effect waves-light btn-large" class="show" onclick="showav()"  >Show Graph</button>
-                    <br>
-                    <img id="available" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/available.png">
-                </div>
+            <img id="resourcepic" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/resource.png">
+            </div>
+            <br>
+            <div>
+                <button id="graph3" class="waves-effect waves-light btn-large" class="show" onclick="showav()"  >Show Graph</button>
+                <br>
+            <img id="available" style="display: none" width="40%" height="40%" class="z-depth-3" src="img/available.png">
             </div>
         </div>
+    </div>
+
 </div>
 <br>
 <br>
@@ -136,8 +138,13 @@
         donate to other programs that <br>can help students from lower income families. To make a donation click the DONATE button.</div>
     <div id="future" style="font-size: 30px">PLANS FOR THE FUTURE </div>
     <div id="futuretext"> In the future we hope to develop our own programs that students can access on our website or on our app.<br>
-        We will still continue to direct students to other helpful resources, but we feel some homegrown, tailored study plans is <br>
-        the best way to help students shrink the achievement gap.</div>
+    We will still continue to direct students to other helpful resources, but we feel some homegrown, tailored study plans is <br>
+    the best way to help students shrink the achievement gap.</div>
 </div>
+<div id="tests" style="text-align: center">
+    <h1 style="font-size:30px">SAMPLE TEST QUESTIONS</h1>
+
+</div>
+<iframe id="collegeB" src="https://collegereadiness.collegeboard.org/sample-questions/writing/8" style="display:none"></iframe>
 </body>
 </html>
